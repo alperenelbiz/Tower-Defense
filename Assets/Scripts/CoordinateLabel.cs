@@ -25,7 +25,7 @@ public class CoordinateLabel : MonoBehaviour
     {
         gridManager = FindObjectOfType<GridManager>();
         label = GetComponent<TextMeshPro>();
-        label.enabled = true;
+        label.enabled = false;
         tile = GetComponentInParent<Tile>();
         DisplayCoordinates();
 
@@ -49,10 +49,10 @@ public class CoordinateLabel : MonoBehaviour
 
     void ToggleLabels()
     {
-        if (Input.GetKeyDown(KeyCode.C))
+        /*if (Input.GetKeyDown(KeyCode.C))
         {
             label.enabled = !label.IsActive();
-        }
+        }*/
     }
 
     void SetLabelColor()
